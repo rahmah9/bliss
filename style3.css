@@ -1,0 +1,496 @@
+*, html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'afacad flux' ,sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    max-width: 1600px;
+}
+h1 {
+    font-size: 2.25rem;
+}
+p {
+    font-size: 1.50rem;
+}
+:root{
+    --primary-color : rgb(218, 127, 214);
+    --secondary-color : rgb(245, 192, 78);
+    --thrid-color :rgb(97, 172, 172);
+    --text-color : #1c1c1c;
+    --background1: rgb(211, 147, 208) ;
+    --background2 : rgb(249, 222, 162);
+    --background3 :rgb(138, 175, 175);
+    --backgroun4 : #7a7979;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color:var(--primary-color) ;
+    padding-inline: 200px;
+}
+li{
+    text-decoration: none;
+    color: var(--text-color);
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding-block: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+header a{
+    font-size: x-large;
+}
+.logo :hover{
+    cursor: pointer;
+}
+
+.intro{
+    height: 800px;
+    background-image: url(aset/weeekly1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+    text-shadow: 3px 3px 3px #1c1c1c;
+
+}
+.container{
+    width: 700px;
+    margin-left: 200px;
+    margin-top: 100px;
+    
+}
+
+.description{
+    padding-block: 15px;
+   
+}
+.medsos{
+    gap: 10px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding-block: 20px;
+}
+.medsos a{
+    color: aliceblue;
+}
+.medsos :hover{
+    cursor: pointer;
+}
+.photo1{
+    height: 400px;
+    width: 400px;
+    border-radius: 2000px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+.btn{
+ margin: 10px;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+.members{
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    align-content: space-between;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-block: 50px;
+}
+.members p{
+    text-align: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+}
+
+.member img{
+    height: 330px;
+    width: 300px;
+    padding-top: 10px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    
+}
+.member{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--background3);
+    box-shadow: 5px 5px 5px 5px #6666;
+    margin-block: 50px;
+ 
+}
+.horizontalscroll:hover .member:not(:hover){
+    opacity: .7;
+    transform: scale(.85);
+}
+.horizontalscroll{
+    width: 100%;
+    scrollbar-color: transparent transparent;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 50px;
+    padding-block: 20px;
+    margin: 30px;
+}
+.member:hover{
+    cursor: pointer;
+}
+#box2{
+    order: 7;
+}
+                                    /* section */
+.about{
+    margin-block: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:50px ;
+    margin-inline: 30px ;
+}
+.aside-part{
+    width: 35%;
+    
+    float: right;
+    flex-wrap: wrap;
+}
+.aside-container{
+    width: 470px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: var(--thrid-color) solid;
+}
+aside{
+    width: 400px;
+    margin-block: 50px;
+    border-radius: 10px;
+    
+    flex-wrap: wrap;
+    margin-inline: 40px;
+}
+aside img{
+    height: 340px;
+    width: 390px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #6666;
+}
+aside p{
+    padding: 5px;
+}
+.article-part{
+width: 65%;
+align-content: space-between;
+float: left;
+flex-wrap: wrap;
+}
+article{
+    width: 800px;
+    box-shadow: 5px 5px 5px 5px #6666;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+article img{
+    height: 400px;
+    width: 800px;
+    padding-inline: 10px;
+    border-radius: 20px;
+}
+.judul{
+    padding: 10px;
+}
+.isi{
+    padding: 10px;
+    text-indent: 2em;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: var(--background2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown button{
+    width: 50px;
+}
+
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-info{
+    display: flex;
+    gap: 25px;
+}
+.footer-info :hover{
+    cursor: pointer;
+}
+
+footer img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 600px){ 
+    html,body{
+        width: 100vh;
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 1.75rem; 
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+    
+    .horizontalscroll{
+        width: 800px;
+    }
+    
+    .intro{
+        width: 100vh;
+        height: 650px;
+        background-position: 90% 40%;
+    }
+    .container{
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+
+    .members{
+        height: 650px;
+    }
+    .member{
+        margin-block: 50px;
+    }
+    .article-part{
+        float: none;
+    }
+    .aside-part{
+        float: none;
+    }
+    .aside-container{
+        width: 700px;
+        gap: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        display: flex;
+    }
+    aside img{
+        height: 200px;
+        width: 250px;
+        
+    }
+    aside{
+        display: flex;
+        width: 700px;
+        gap: 20px;
+    }
+    figcaption{
+        width: 300px;
+        height: 200px;
+    }
+    #asidecard1 img{
+        height: 280px;
+    }
+    
+    article{
+        width: 700px;
+        margin-block: 50px;
+    }
+    article img{
+        height: 350px;
+        width: 700px;
+    }
+    header{
+        width: 100vh;
+        padding-inline: 70px;
+    }
+    .intro{
+        gap: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html,body{
+        width: 100vh;
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 1.75rem; 
+    }
+    .intro{
+        width: 100vh;
+        height: 650px;
+        background-position: 90% 40%;
+    }
+    .article-part{
+        float: none;
+    }
+    .aside-part{
+        float: none;
+    }
+    .aside-container{
+        width: 835px;
+        gap: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        display: flex;
+    }
+    aside img{
+        height: 200px;
+        width: 250px;
+        
+    }
+    aside{
+        display: flex;
+        width: 800px;
+        gap: 20px;
+    }
+    .figcaption{
+        width: 500px;
+        height: 200px;
+    }
+    #asidecard1 img{
+        height: 400px;
+    }
+    article{
+        width: 835px;
+        margin-block: 50px;
+    }
+    article img{
+        height: 350px;
+        width: 835px;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width: 1024px) and (max-width: 1366px){
+    html,body{
+        width: 200vh;
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 1.75rem; 
+    }
+    .intro{
+        width: 100%;
+        height: 650px;
+        background-position: 90% 40%;
+    }
+    .article-part{
+        float: none;
+    }
+    .aside-part{
+        float: none;
+    }
+    .aside-container{
+        width: 835px;
+        gap: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        display: flex;
+    }
+    aside img{
+        height: 200px;
+        width: 250px;
+        
+    }
+    aside{
+        display: flex;
+        width: 800px;
+        gap: 20px;
+    }
+    figcaption{
+        width: 500px;
+        height: 200px;
+    }
+    #asidecard1 img{
+        height: 400px;
+    }
+    .card{
+        width: 835px;
+        margin-block: 50px;
+    }
+    .cardimg{
+        height: 350px;
+        width: 835px;
+    }
+  }
+  
