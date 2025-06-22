@@ -203,7 +203,7 @@ aside{
     width: 400px;
     margin-block: 50px;
     border-radius: 10px;
-    
+    flex-direction: column;
     flex-wrap: wrap;
     margin-inline: 40px;
 }
