@@ -189,7 +189,6 @@ main{
 }
 .aside-part {
     width: 35%;
-    flex-wrap: wrap;
 }
 
 .aside-container{
@@ -217,7 +216,7 @@ aside p{
 }
 .article-part{
 width: 60%;
-flex-wrap: wrap;
+
 align-content: space-between;
 float: left;
 flex-wrap: wrap;
