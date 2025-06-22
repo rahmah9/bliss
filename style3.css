@@ -189,6 +189,7 @@ main{
 }
 .aside-part {
     width: 35%;
+    flex-wrap: wrap;
 }
 
 .aside-container{
