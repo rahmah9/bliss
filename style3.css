@@ -5,6 +5,7 @@
     font-family: 'afacad flux' ,sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
+    max-width: 1600px
    
 }
 h1 {
@@ -180,35 +181,8 @@ main{
     order: 7;
 }
                                     /* section */
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px;
-    margin: 50px 30px;
-    gap: 30px;
-}
-.aside-part {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.aside-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    border: var(--thrid-color) solid;
-    padding: 20px;
-    gap: 20px; /* kasih jarak antar aside */
-}
-
 aside {
-    width: 200px;
+    width: 370px;
     margin: 30px 40px;
     border-radius: 10px;
     display: flex;
@@ -228,35 +202,6 @@ aside p {
     padding: 5px;
 }
 
-.article-part{
-width: 60%;
-
-align-content: space-between;
-float: left;
-flex-wrap: wrap;
-}
-article{
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 5px 5px 5px 5px #6666;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-article img{
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    padding-inline: 10px;
-    border-radius: 20px;
-}
-.judul{
-    padding: 10px;
-}
-.isi{
-    padding: 10px;
-    text-indent: 2em;
-}
 
 .dropdown {
     position: relative;
