@@ -193,7 +193,7 @@ main{
 }
 
 .aside-container{
-    width: 470px;
+    width: 370px;
     flex-wrap: wrap;
     border-radius: 10px;
     border: var(--thrid-color) solid;
