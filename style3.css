@@ -181,26 +181,71 @@ main{
     order: 7;
 }
                                     /* section */
-aside {
-    width: 370px;
-    margin: 30px 40px;
-    border-radius: 10px;
+.about {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 50px 30px;
+    gap: 30px;
+}
+.aside-part {
+    width: 35%;
 }
 
-aside img {
-    height: 300px;
-    width: 300px;
+.aside-container{
+    width: 470px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: var(--thrid-color) solid;
+}
+aside{
+    width: 400px;
+    margin-block: 50px;
+    border-radius: 10px;
+    
+    flex-wrap: wrap;
+    margin-inline: 40px;
+}
+aside img{
+    height: 340px;
+    width: 390px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px #6666;
 }
-
-aside p {
+aside p{
     padding: 5px;
 }
+.article-part{
+width: 60%;
+flex-wrap: wrap;
+align-content: space-between;
+float: left;
+flex-wrap: wrap;
+}
+article{
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 5px 5px 5px 5px #6666;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+article img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    padding-inline: 10px;
+    border-radius: 20px;
+}
+.judul{
+    padding: 10px;
+}
+.isi{
+    padding: 10px;
+    text-indent: 2em;
+}
+
 
 
 .dropdown {
